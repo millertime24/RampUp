@@ -22,8 +22,23 @@
                                 <rect key="frame" x="0.0" y="-7" width="375" height="674"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5A-71-Sga">
+                                <rect key="frame" x="258" y="586" width="107" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="D7e-3U-9n1"/>
+                                    <constraint firstAttribute="height" constant="71" id="M2X-Kb-GZA"/>
+                                </constraints>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="onRampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Asg-MH-Kdm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xeb-kS-lWa" firstAttribute="trailing" secondItem="j5A-71-Sga" secondAttribute="trailing" constant="10" id="UlB-Od-5ji"/>
+                            <constraint firstItem="Xeb-kS-lWa" firstAttribute="bottom" secondItem="j5A-71-Sga" secondAttribute="bottom" constant="10" id="VbZ-gz-hz8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xeb-kS-lWa"/>
                     </view>
                     <connections>
@@ -35,4 +50,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
 </document>
