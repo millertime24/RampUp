@@ -33,7 +33,7 @@ class RampPlacerVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationCo
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Create a session configuration
+        // Create a session configuration 
         let configuration = ARWorldTrackingConfiguration()
 
         // Run the view's session
